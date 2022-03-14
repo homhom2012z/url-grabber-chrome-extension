@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome Extension</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h4>URL Grabber</h4>
+    </div>
+
+    <div class="app-body">
+      <input type="text" id="input-el" placeholder="Enter url here" />
+      <button id="input-btn">SAVE URL</button>
+      <button id="tab-btn">SAVE TAB</button>
+      <button id="delete-btn">DELETE ALL URL</button>
+      <div id="url-lists">
+        <ul id="ul-el" class="urlList"></ul>
+      </div>
+    </div>
+
+    <div id="snackbar"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
