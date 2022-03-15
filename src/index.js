@@ -123,5 +123,5 @@ const getUrlTitle = async (url) => {
   const res = await axios.get(
     `https://fetch-url-title.herokuapp.com/api/v1/title/?url=${url}`
   );
-  return res.data;
+  return res.data.title;
 };
