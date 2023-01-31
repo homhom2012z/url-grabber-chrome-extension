@@ -121,7 +121,7 @@ async function render(urls) {
 // Use get URL title API to fecth the title of saved URLs
 const getUrlTitle = async (url) => {
   const res = await axios.get(
-    `https://fetch-url-title.herokuapp.com/api/v1/title/?url=${url}`
+    `https://fetch-url-title-nodejs-native.vercel.app/api/v1/title/?url=${url}`
   );
   return res.data.title;
 };
